@@ -1,0 +1,24 @@
+.first {
+    color: darkturquoise;
+    background-color: blueviolet;
+    opacity: 0.5;
+}
+.second{
+    color: #ccc;
+    background-color: rgba(85, 37, 85, 0.5);
+}
+.third{
+    color: black;
+    background-color: rgb(234,99,52);
+}
+.dog1 {
+    opacity: 0.6;
+}
+.dog1 img {
+    width: 300px;
+    height: 500px;
+}
+.dog2 {
+    background-color: aqua;
+    background-color: rgba(20,130,140, 0.1);
+}

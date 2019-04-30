@@ -1,0 +1,15 @@
+.prvi, .drugi, .treci {
+background-color: rgb(216, 246, 155);
+border-width: 5px;
+
+
+}
+.prvi, .treci {
+    border-style: dashed;
+    border-color: red;
+
+}
+.drugi {
+    border-style: solid;
+    border-color: green
+}

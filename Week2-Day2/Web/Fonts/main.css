@@ -1,0 +1,81 @@
+/*font-family: 'Wendy One', sans-serif;*/
+@font-face {
+    font-family: 'Cormorant Unicase';
+    src: url('./Fonts/CormorantUnicase-SemiBold.woff2') format('woff2'),
+        url('./Fonts/CormorantUnicase-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Unicase';
+    src: url('./Fonts/CormorantUnicase-Light.woff2') format('woff2'),
+        url('./Fonts/CormorantUnicase-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Unicase';
+    src: url('./Fonts/CormorantUnicase-Regular.woff2') format('woff2'),
+        url('./Fonts/CormorantUnicase-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Unicase';
+    src: url('./Fonts/CormorantUnicase-Medium.woff2') format('woff2'),
+        url('./Fonts/CormorantUnicase-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Unicase Bold';
+    src: url('./Fonts/CormorantUnicase-Bold.woff2') format('woff2'),
+        url('./Fonts/CormorantUnicase-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+body {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.prvi {
+    font-family: 'Wendy One', sans-serif;
+    font-size: 36px;
+    text-align: justify;
+    
+}
+.drugi {
+    font-style: oblique;
+    font-family: 'Cormorant Unicase Bold';
+    
+}
+.treci {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: 900;
+}
+.treci > span {
+    font-weight: 900;
+    font-style: italic;
+}
+.cetvrti {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.peti { 
+    text-transform: lowercase;
+    text-decoration: line-through;
+    text-align: justify;
+}
+div{
+    width: 40%;
+    margin: 0 auto;
+}
