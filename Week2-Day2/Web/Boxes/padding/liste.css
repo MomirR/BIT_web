@@ -1,0 +1,17 @@
+.ul1 {
+    list-style: circle;
+}
+.ul2 {
+    list-style: square;
+}
+.ol1{
+    list-style: upper-alpha;
+}
+.ol2{
+    list-style: upper-roman;
+}
+.ul3, .ul4 {
+    list-style: none;
+    width: 200px;
+    list-style-image: url(https://forums.sufficientvelocity.com/styles/sv_smiles/xenforo/eyebrow.png);
+}

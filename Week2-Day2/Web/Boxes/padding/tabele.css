@@ -1,0 +1,28 @@
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+*{
+    text-align:center;
+}
+td{
+    width: 150px;
+}
+table th, table td{
+    padding: 10px 0
+}
+.prvi th{
+    background: red
+}
+tr:nth-child(odd) {
+    background: rgb(187, 199, 212);
+}
+table tr:hover{
+    background: gold;
+}
+tr td img{
+    height: 100px;
+
+    
+} 

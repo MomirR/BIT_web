@@ -1,0 +1,45 @@
+p {
+    background-color: #ccc;
+    display: inline;
+    padding: 0px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.second{
+    display:none
+}
+.third{
+    visibility: hidden;
+}
+.naslov{
+    display:block;
+    width: 960px;
+    margin: 50px auto;
+    padding: 50px 0;
+    background: rgb(81, 90, 146);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 20px 15px rgb(124, 5, 108);
+    
+    
+}
+
+/* .first, .third {
+  
+} */
+/* .second {
+    padding-top: 50px;
+}
+.first{
+    width: 300px;
+    margin:50px;
+}
+.second{
+    width: 400px;
+    margin: 0 auto;
+
+}
+.third{
+    width: 200px;
+    margin-left: 100px;
+} */
