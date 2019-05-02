@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+li * {
+    list-style: none;
+}
+.drop-down{
+    display: none;
+    
+    /* visibility: hidden; */
+}
+.prve-liste {
+    display: inline-block;
+    width: 70px;
+    padding: 8px;
+    position: relative;  
+}
+body > ul {
+    background-color: gold;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.prve-liste:hover {
+    background-color: #ccc;
+}
+
+.prve-liste:hover .drop-down {
+    display: block;
+}
+.drop-down > li {
+    display: block;
+    width: 100px;
+    padding: 1px;
+    position: relative;  
+}
