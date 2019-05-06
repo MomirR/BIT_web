@@ -1,0 +1,52 @@
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Repeat
+Find an image that can be included as a repeating image on the page
+Use that image to set a background image on the body element */
+body {
+    background-image: url(img/background-image.jpg);
+}
+/* Attachment
+Modify the previous example
+Prevent image from moving while the user scrolls down the page */
+body{
+    background-attachment: fixed;
+}
+/* Position
+Use the previous code structure
+Remove previously defined styles for the background image
+Add a new background image. It shouldn’t be repeated
+Image should be horizontally positioned on the right
+The image should be positioned vertically in the body center
+Make it fixed */
+body{
+    background-image: url(img/background-image2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-position-x: right;
+    background-position-y: center; */
+}
+/* Size
+Modify the previous example
+Make image stretch and cover the whole body
+However, the image should not be deformed (aspect ratio has to be preserved) */
+body{
+    background-size: auto;
+    background-position: center;
+    background: #ffffff url(img/background-image2.jpg) no-repeat fixed center;
+
+}
+
+
+
+

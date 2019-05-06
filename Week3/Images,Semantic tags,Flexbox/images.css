@@ -1,0 +1,43 @@
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* .images{
+    display: block;
+} */
+/* The first image should be 200px high
+The second image should be 200px wide
+The third image should be 200px wide and 200px high */
+.first {
+    height: 200px;
+}
+.second{
+    width: 200px;
+}
+.third{
+    width: 200px;
+    height: 200px;
+}
+/* 
+Modify the previously example
+Align the first image to the right
+Align the second image in the center
+Align the third one to the left */
+.first {
+    float: right;
+}
+.second{
+    display: block;
+   margin: 0 auto;
+}
+.third{
+    float: left;
+}
