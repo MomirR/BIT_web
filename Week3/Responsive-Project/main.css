@@ -1,0 +1,255 @@
+/* GLOBAL CSS*/
+* {
+    box-sizing: border-box;
+}
+* a {
+    text-decoration: none;
+    color: white;
+}
+h3 {
+    color: rgb(86, 138, 187);
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+/* HEADER START*/
+header {
+    text-align: center;
+}
+header h1{
+  text-transform: uppercase;
+}
+.firstSpan {
+    border-top: 4px solid rgb(138, 129, 129);
+    border-left: 4px solid rgb(138, 129, 129);
+    border-bottom: 4px solid rgb(138, 129, 129);
+    color: orange;
+    padding: 3px 0 3px 10px;
+}
+.secondSpan{
+    color: rgb(138, 129, 129);
+}
+.firstNav ul {
+    padding-left: 0;
+    margin: 0 25px;
+}
+.firstNav {
+    text-align: center;
+}
+.firstNav li {
+    list-style: none;
+}
+.firstNav li a {
+    display: block; 
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(134, 182, 226);
+   
+}
+.firstNav li a:hover {
+    color: rgb(134, 182, 226);
+    background-color: rgb(167, 153, 153);
+}
+.headerImg {
+  
+    width: 100%;
+    height:500px;  
+    background-image: url(images/banner3.jpg);
+    background-size: cover;
+    /* padding: 10% 10%; */
+    /* height: auto; */
+}
+.headerImg h2{
+    padding-top: 30%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.headerImg a{
+    font-size: 20px;
+    background-color: rgb(62, 86, 167);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+/* MAIN START*/
+/* FIRST SECTION START */
+.firstSection {
+    padding: 30px;
+}
+.firstSection h2 {
+   text-align: center;
+}
+.firstSection .links a {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+.firstSection .links {
+   margin-top: 35px;
+}
+.firstSection .divImg{
+    margin: 15px 0;
+}
+.firstSection .divImg img{
+    width: 100%;
+}
+.firstSection {
+    margin-bottom: 150px;
+}
+/* SECOND SECTION START */
+.secondSection h5 {
+    text-transform: uppercase;
+}
+.secondSection article {
+    background-color: rgb(120, 182, 223);
+    margin: 15px 30px;
+}
+.secondSection img{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+}
+.secondSection h2 {
+    text-align: center;
+    font-size: 40px;
+}
+/* .secondSection .imgIcon {
+    padding: 15px;
+    display: inline-block;
+    margin-top: 10px;
+} */
+.secondSection .secondDiv {
+    /* float: left; */
+    display: inline-block;
+}
+.secondSection img {
+    float: left;
+    padding: 40px;
+}
+.secondSection h5 {
+    float: left;
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+.secondSection p{
+color: #fff;
+margin-top: 0;
+margin-bottom: 0;
+clear:left;
+padding-left: 15px;
+padding-bottom: 30px;
+}
+.secondSection span {
+    display: block;
+    color: white;
+    margin-top: 12px;
+}
+/* THIRD SECTION*/
+.thirdSection article{
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+}
+.thirdSection .article1 {
+    background-color: rgb(138, 204, 138);
+    font: white;
+    text-align: center;
+    float: left;
+}
+.thirdSection .article1 h4 {
+  padding-top: 50px;
+  color: white;
+}
+
+.thirdSection .article2 {
+    background-color: rgb(211, 122, 159);
+    text-align: center;
+    float: left;
+}
+.thirdSection .article2 h4 {
+    padding-top: 50px;
+    color: white;
+  }
+  .thirdSection .article2 span {
+      color: #fff;
+  }
+.thirdSection .article3 {
+    background-color: rgb(58, 69, 228);
+    color: white;
+    text-align: center;
+    float: left;
+}
+.thirdSection .article3 h4 {
+    padding-top: 50px;
+}
+.thirdSection .article4 {
+    background-color: rgb(138, 204, 138);
+    float: left;
+    text-align: center;
+}
+.thirdSection .article4 img {
+    width: 80%;
+}
+/* FORM START */
+.form {
+    padding: 0 25px;
+}
+.form h2 {
+    text-align: center;
+}
+.form input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form textarea {
+    width: 100%;
+}
+.form button {
+    display: block;
+    margin: 20px 0 40px 0;
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 10px 25px;
+}
+/* FOOTER START */
+footer {
+    background-color: rgb(42, 37, 37);
+    text-align: center;
+    color: white;
+}
+footer ul {
+    padding-top: 45px;
+    text-align: center;
+}
+footer p {
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+footer li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    display: inline-block;
+
+}
+footer nav {
+   
+}
+footer li a {
+    display: block; 
+    padding: 10px;
+    width: 100%;
+}
