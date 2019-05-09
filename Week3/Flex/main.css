@@ -1,0 +1,39 @@
+.firstDiv {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    order: 4;
+   
+}
+.secondDiv {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    order: 3;
+}
+.thirdDiv {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    order: 2;
+    
+}
+.fourthDiv {
+    width: 600px;
+    height: 600px;
+    background-color: pink;
+    order: 1;
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    width: 600px;
+}
+.secondParent{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    
+}

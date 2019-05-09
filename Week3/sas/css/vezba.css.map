@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAE;EACE,gBAAgB,EAAE,IAAI;EACtB,SAAS,EAAE,IAAI",
+"sources": ["../saas/vezba.scss"],
+"names": [],
+"file": "vezba.css"
+}

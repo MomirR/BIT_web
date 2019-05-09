@@ -1,0 +1,12 @@
+$background-blue-color: #2962ff;
+$font-color: white;
+$width-container: 960px;
+
+@mixin text-shadow($shadow) {
+  text-shadow: $shadow;
+}
+@mixin box-shadow($boxshadow, $border, $bcg-color) {
+  box-shadow: $boxshadow;
+  border: $border;
+  background-color: $bcg-color;
+}
