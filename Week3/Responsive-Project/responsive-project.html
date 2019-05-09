@@ -20,33 +20,41 @@
     <!-- HEADER START -->
     <header class="container clearfix">
         <h1>
-            <span class="firstSpan">build</span>
-            <span class="secondSpan">estate</span> <!-- capitalize letters -->
+            <a href="#">
+                <span class="firstSpan">build</span>
+                <span class="secondSpan">estate</span>
+            </a>
         </h1>
         <nav class="firstNav">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#active">HOME</a></li>
+                <li><a href="#about-us">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact-us">CONTACT US</a></li>
             </ul>
         </nav>
+        <div class="headerImg2">
+            <!-- background image -->
+            <h2>we shape our buildings thereafter they shape us</h2>
+            <a href="#">Read More</a>
+        </div>
     </header>
-    <div class="headerImg">
-        <!-- background image -->
-        <h2>we shape our buildings <br> thereafter they shape us</h2>
-        <a href="#">Read More</a>
-    </div>
     <!-- MAIN START -->
     <main>
         <!-- ABOUT US -->
-        <section class="firstSection container clearfix">
-            <article class="container firstArticle">
+        <section class="firstSection container clearfix" id="about-us">
+            <div class="title-cube">
                 <h2>Who We Are</h2>
+                <span class="outer-box">
+                    <span class="box"></span>
+                </span>
+            </div>
+            <article class="container firstArticle">
+
                 <h3>Welcome To Our Build Estate</h3>
                 <q><b>If you can build buildings, why sit on the beach? We always think of buildings in their settings,
                         but so do other architects.</q></b>
-                <span class="cube"></span>
+
                 <div class="links">
                     <a href="#">
                         <img src="images/arrow_bullet.png" alt="img">
@@ -70,13 +78,10 @@
                 <img src="images/about.jpg" alt="img">
             </div>
             <article class="secondArticle">
-
-                <!-- figura -->
                 <h3>We Make Your Dream Home</h3>
                 <q><b>For decades engineers have stood accused that their buildings do not have any cultural value. We
                         have attempted to liberate engineering of this accusation.</q></b>
                 <div class="links">
-
                     <a href="#">
                         <img src="images/arrow_bullet.png" alt="img">
                         Great Engineers Ideas.
@@ -97,14 +102,20 @@
             </article>
         </section>
         <!-- SECOND SECTION START -->
-        <section class="secondSection container">
-            <h2>What People Says</h2>
-
+        <section class="secondSection container clearfix" id="services">
+            <div class="title-cube">
+                <h2>What People Says</h2>
+                <span class="outer-box">
+                    <span class="box"></span>
+                </span>
+            </div>
+            <span class="outer-box">
+                <span class="box"></span>
+            </span>
             <article class="clearfix">
                 <div class="imgIcon">
                     <img src="images/t1.jpg" alt="img">
                 </div>
-
                 <h3>williamson
                     <span>
                         <i class="fa fa-star"></i>
@@ -114,7 +125,6 @@
                         <i class="fa fa-star-half-o"></i>
                     </span>
                 </h3>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At unde voluptates saepe vel suscipit dolore
                     nemo earum fuga totam vero exercitationem illum, esse reprehenderit dolorum voluptatem id sint ipsam
                     necessitatibus?</p>
@@ -132,7 +142,6 @@
                         <i class="fa fa-star-half-o"></i>
                     </span>
                 </h3>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At unde voluptates saepe vel suscipit dolore
                     nemo earum fuga totam vero exercitationem illum, esse reprehenderit dolorum voluptatem id sint ipsam
                     necessitatibus?</p>
@@ -150,16 +159,20 @@
                         <i class="fa fa-star-half-o"></i>
                     </span>
                 </h3>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At unde voluptates saepe vel suscipit dolore
                     nemo earum fuga totam vero exercitationem illum, esse reprehenderit dolorum voluptatem id sint ipsam
                     necessitatibus?</p>
             </article>
         </section>
-
         <!-- THIRD SECTION START  -->
-        <section class="thirdSection container">
-            <h2>Get In Touch With Us</h2>
+        <section class="thirdSection container" id="contact-us">
+
+            <div class="title-cube">
+                <h2>Get In Touch With Us</h2>
+                <span class="outer-box">
+                    <span class="box"></span>
+                </span>
+            </div>
             <article class="article1">
                 <h4>CONTACT US</h4>
                 <a href="tel:120001233120">
@@ -206,7 +219,12 @@
 
         <!-- FORM START -->
         <div class="form container">
-            <h2>Mail Us</h2>
+            <div class="title-cube">
+                <h2>Mail Us</h2>
+                <span class="outer-box">
+                    <span class="box"></span>
+                </span>
+            </div>
             <form action="POST">
                 <input type="text" name="text" placeholder="Name">
                 <input type="email" name="email" placeholder="Email">
