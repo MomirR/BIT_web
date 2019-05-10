@@ -481,6 +481,9 @@ footer li a:hover {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .headerImg2 {
+    margin-top: -25px;
+  }
 }
 
 /*DESKTOP VERSION*/
@@ -491,9 +494,7 @@ footer li a:hover {
     max-width: none;
     width: unset;
   }
-  .headerImg2 {
-    margin-top: -25px;
-  }
+
   .secondSection article {
     width: 32%;
   }
@@ -522,9 +523,9 @@ footer li a:hover {
     max-width: 30%;
     margin-left: 5%;
   }
-  .firstSection {
+  /* .firstSection {
     width: 1400px;
-  }
+  } */
   .firstSection .secondArticle {
     float: right;
   }

@@ -1,0 +1,20 @@
+body {
+  width: 100%; }
+
+.one {
+  border: 2px solid red; }
+
+.two {
+  border: 2px solid blue; }
+
+.three {
+  border: 2px solid green; }
+
+.main, .one, .two, .three {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: aquamarine;
+  color: darkblue;
+  width: 1166.6666666667%; }
+
+/*# sourceMappingURL=vezba1.css.map */

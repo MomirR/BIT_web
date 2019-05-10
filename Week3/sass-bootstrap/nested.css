@@ -1,0 +1,15 @@
+.container {
+  width: 960px;
+}
+
+.first,
+.second,
+.third {
+  border: 2px solid blue;
+  height: 60px;
+}
+
+.rFirst {
+  border: 2px solid blue;
+  height: 30px;
+}
