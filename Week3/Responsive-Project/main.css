@@ -10,8 +10,13 @@ a {
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -22,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CLEARFIX */
 
-.clearfix::before, .clearfix::after {
+.clearfix::before,
+.clearfix::after {
   content: "";
   display: table;
 }
@@ -148,9 +154,10 @@ header h1 {
   position: relative;
 }
 
-.title-cube .outer-box:before, .title-cube .outer-box:after {
+.title-cube .outer-box:before,
+.title-cube .outer-box:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 50px;
   height: 2px;
   background-color: #000;
@@ -400,11 +407,11 @@ footer li a:hover {
     margin-left: 25px;
   }
   header ul {
-    margin-right: 25px!important;
+    margin-right: 25px !important;
   }
   header {
     background-size: cover;
-    width: unset!important;
+    width: unset !important;
   }
   header {
     margin-left: 10px;
@@ -434,7 +441,7 @@ footer li a:hover {
     float: left;
   }
   .firstNav li a {
-    padding: 10px; 
+    padding: 10px;
     color: white;
     background-color: transparent;
   }
@@ -484,13 +491,16 @@ footer li a:hover {
     max-width: none;
     width: unset;
   }
-  .headerImg2{
-   /* height: 700px; */
+  .headerImg2 {
+    margin-top: -25px;
   }
   .secondSection article {
     width: 32%;
   }
-  .thirdSection .article1, .thirdSection .article2, .thirdSection .article3, .thirdSection .article4 {
+  .thirdSection .article1,
+  .thirdSection .article2,
+  .thirdSection .article3,
+  .thirdSection .article4 {
     width: 25%;
   }
   form {
@@ -501,7 +511,9 @@ footer li a:hover {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .firstSection .firstArticle, .firstSection .divImg, .firstSection .secondArticle {
+  .firstSection .firstArticle,
+  .firstSection .divImg,
+  .firstSection .secondArticle {
     width: 32%;
     float: left;
   }
