@@ -1,0 +1,22 @@
+.mainDiv {
+  background-color: $color-green;
+  text-align: center;
+  color: $font-color;
+  margin-bottom: 50px;
+}
+.mainDiv img {
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+.mainDiv h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.mainDiv ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px;
+}

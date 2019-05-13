@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bootstrap-project</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">BIT STUDENT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">MENU
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PORTFOLIO <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="mainDiv">
+
+            <img src="assets/images/profile.png" alt="">
+            <h2 class="pt-2">BOOTSTRAP AND SASS</h2>
+            <span class="star fa fa-star"></span>
+            <ul class="container-fluid">
+                <li> <a href="#">Web Developer-</a></li>
+                <li> <a href="#">Graphic Artist-</a></li>
+                <li> <a href="#">User Experience Designer</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- PORTFOLIO START -->
+        <section class="container portfolio mb-5">
+            <h1>portfolio</h1>
+            <span class="star fa fa-star"></span>
+            <div class="container">
+                <div class="row mx-auto d-block">
+                    <img class="col-sm-10 " src="assets/images/cabin.png" alt="img">
+                    <img class="col-sm-10" src="assets/images/cake.png" alt="img">
+                    <img class="col-sm-10" src="assets/images/circus.png" alt="img">
+                    <img class="col-sm-10" src="assets/images/game.png" alt="img">
+                    <img class="col-sm-10" src="assets/images/safe.png" alt="img">
+                    <img class="col-sm-10" src="assets/images/submarine.png" alt="img">
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT START -->
+        <section class="container about mb-4">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>about</h2>
+                    <span class="star fa fa-star"></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro accusantium, eius
+                        beatae unde quaerat, obcaecati dolores recusandae id voluptatum, perspiciatis omnis? Doloribus,
+                        repellat facere. Cupiditate cum atque asperiores distinctio.</p>
+                    <p>Dolorem inventore deserunt repellat sit, quam hic alias ullam modi exercitationem voluptatum
+                        deleniti dolore vel in quas explicabo dolores temporibus fugiat. Dolore veritatis atque fuga
+                        eius molestias sunt, optio aliquam!</p>
+                    <a href="#">
+                        <div class="buttons">
+                            <button type="button" class="btn btn-inline d-inline-block">
+                                <span class="fa fa-info"></span>
+                                Find Out More</button>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT ME -->
+        <section class="container text-center">
+            <h1 class="text-center mb-2">contact me</h1>
+            <span class="star fa fa-star"></span>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message "></textarea>
+                </div>
+                <button type="submit" class="btn mb-5">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mb-4">
+                    <h2 class="pt-5 mb-3">location</h2>
+                    <p class="mb-0">Centar za obrazovanje</p>
+                    <p class="mb-0">bit technology</p>
+                    <address class="mb-0">Nemanjina 4/I,Beograd</address>
+                </div>
+                <div class="col-sm-12 mb-4">
+                    <h2>around the web</h2>
+                    <div class="col-sm-12">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-4">
+                    <h2 class="pb-3">more details</h2>
+                    <div class="col-sm-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio ut quisquam itaque
+                            in? Cum dignissimos quasi odit veritatis sunt.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-5">
+                    <p class="mb-0">Copyright &copy Bit Student 2019</p>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
