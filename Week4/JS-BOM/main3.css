@@ -1,0 +1,11 @@
+.settingColor {
+  color: tomato;
+  background-color: yellow;
+}
+.bkg-color {
+  background-color: aqua;
+}
+.bkg-color2 {
+  background-color: brown;
+  text-transform: uppercase;
+}
