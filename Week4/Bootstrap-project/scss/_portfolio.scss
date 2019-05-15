@@ -16,3 +16,16 @@ h1 {
   margin-bottom: 8px;
   height: 250px;
 }
+@media (min-width: 768px) {
+  .portfolio img {
+    height: 200px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio img {
+    height: 200px;
+    width: 250px;
+    padding-bottom: 15px;
+  }
+}

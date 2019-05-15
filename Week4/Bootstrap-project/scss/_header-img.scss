@@ -1,5 +1,9 @@
-.mainDiv {
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
   background-color: $color-green;
+}
+.mainDiv {
   text-align: center;
   color: $font-color;
   margin-bottom: 50px;
@@ -20,3 +24,13 @@
   justify-content: center;
   padding: 30px;
 }
+.mainDiv a:hover {
+  color: $font-color-dark!important;
+} 
+@media (min-width: 992px) { 
+  .mainDiv img {
+    width: 15%;
+  }
+}
+
+

@@ -1,5 +1,5 @@
 header nav {
-  background-color: $color-footer;
+  background-color: $font-color-dark;
 }
 
 .navbar-brand > a {
@@ -13,4 +13,19 @@ header nav {
 .navbar-dark .navbar-toggler {
   background: $color-green !important;
   color: $font-color;
+}
+a:hover{
+color: #00bc9c!important;
+}
+
+@media (min-width: 768px) { 
+  .navbar-dark .navbar-toggler {
+    background: $font-color-dark !important;
+    color: $font-color;
+    border: 2px solid white;
+  }
+
+  header ul{
+    margin-left: auto!important;
+  }
 }

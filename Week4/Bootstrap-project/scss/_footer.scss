@@ -1,5 +1,5 @@
 footer {
-  background: $color-footer;
+  background: $font-color-dark!important;
   color: $font-color;
 }
 
@@ -16,7 +16,7 @@ footer i {
   margin: 30px 0;
 }
 footer a:hover i {
-  color: tomato;
+  color: $color-green;
 }
 footer small {
   color: #ccc;

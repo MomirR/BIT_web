@@ -21,13 +21,15 @@
 .about a {
   text-align: center;
 }
-.about .buttons {
-  margin: 0 auto;
-}
-.about .row > div {
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
-.about .text-center {
+.about .someDIv {
   padding: 30px 5px;
+  margin-bottom: 25px;
+  text-align: center;
 }
+@media (min-width: 992px){
+  // .about p {
+  //   width: 50%;
+  // }
+ 
+}
+

@@ -16,68 +16,72 @@
 </head>
 
 <body>
-    <header class="container">
+    <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">BIT STUDENT</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">MENU
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFOLIO <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT ME</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <h1>
+                    <a class="navbar-brand" href="#">BIT STUDENT</a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">MENU
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">PORTFOLIO <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact_me">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <div class="mainDiv">
 
             <img src="assets/images/profile.png" alt="">
-            <h2 class="pt-2">BOOTSTRAP AND SASS</h2>
+            <h1 class="pt-2">BOOTSTRAP AND SASS</h1>
             <span class="star fa fa-star"></span>
-            <ul class="container-fluid">
-                <li> <a href="#">Web Developer-</a></li>
-                <li> <a href="#">Graphic Artist-</a></li>
-                <li> <a href="#">User Experience Designer</a></li>
+            <ul>
+                <li><a href="#">Web Developer</a>-</li>
+                <li><a href="#">Graphic Artist</a>-</li>
+                <li><a href="#">User Experience Designer</a></li>
             </ul>
         </div>
     </header>
     <main>
         <!-- PORTFOLIO START -->
-        <section class="container portfolio mb-5">
+        <section class="container portfolio mb-5" id="portfolio">
             <h1>portfolio</h1>
             <span class="star fa fa-star"></span>
             <div class="container">
-                <div class="row mx-auto d-block">
-                    <img class="col-sm-10 " src="assets/images/cabin.png" alt="img">
-                    <img class="col-sm-10" src="assets/images/cake.png" alt="img">
-                    <img class="col-sm-10" src="assets/images/circus.png" alt="img">
-                    <img class="col-sm-10" src="assets/images/game.png" alt="img">
-                    <img class="col-sm-10" src="assets/images/safe.png" alt="img">
-                    <img class="col-sm-10" src="assets/images/submarine.png" alt="img">
+                <div class="row mx-auto d-inline-block">
+                    <img class="col-10 col-md-5 col-lg-4" src="assets/images/cabin.png" alt="img">
+                    <img class="col-10 col-md-5 col-lg-4" src="assets/images/cake.png" alt="img">
+                    <img class="col-10 col-md-5 col-lg-4" src="assets/images/circus.png" alt="img">
+                    <img class="col-10 col-md-5 col-lg-4" src="assets/images/game.png" alt="img">
+                    <img class="col-10 col-md-5 col-lg-4" src="assets/images/safe.png" alt="img">
+                    <img class="col-10 col-md-5 col-lg-4" src="assets/images/submarine.png" alt="img">
                 </div>
             </div>
         </section>
         <!-- ABOUT START -->
-        <section class="container about mb-4">
-            <div class="row">
-                <div class="col-sm-12 text-center">
+        <section class="container-fluid about mb-4" id="about">
+            <div class="container">
+                <div class="someDIv">
                     <h2>about</h2>
                     <span class="star fa fa-star"></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro accusantium, eius
-                        beatae unde quaerat, obcaecati dolores recusandae id voluptatum, perspiciatis omnis? Doloribus,
-                        repellat facere. Cupiditate cum atque asperiores distinctio.</p>
-                    <p>Dolorem inventore deserunt repellat sit, quam hic alias ullam modi exercitationem voluptatum
-                        deleniti dolore vel in quas explicabo dolores temporibus fugiat. Dolore veritatis atque fuga
-                        eius molestias sunt, optio aliquam!</p>
+                    
+                        <p class="firstP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam cum at distinctio provident molestias consequuntur. Amet, alias dignissimos labore tenetur debitis quia assumenda sint inventore accusamus non iure repudiandae corporis quo error voluptatum minima nisi excepturi! Tenetur magni debitis id error commodi exercitationem, tempora aliquid est laboriosam quaerat, voluptas temporibus, nisi ea? Neque sit illum error voluptatum incidunt in!</p>
+                  
+                   
+                        <p class="secondP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, molestias facilis explicabo dicta esse saepe rerum iure voluptates, expedita, veritatis accusantium quam suscipit doloremque animi blanditiis at recusandae repudiandae. Tenetur quae dolorem veritatis sapiente laudantium inventore, vero exercitationem molestiae culpa! Blanditiis maxime eum quisquam alias corporis? Ratione deleniti minima qui quia, hic dolores velit vel consequuntur praesentium quasi debitis beatae!</p>
+                   
                     <a href="#">
                         <div class="buttons">
                             <button type="button" class="btn btn-inline d-inline-block">
@@ -90,11 +94,11 @@
             </div>
         </section>
 
-        <!-- CONTACT ME -->
-        <section class="container text-center">
+        <!-- CONTACT ME -- FORM -->
+        <section class="container text-center" id="contact_me">
             <h1 class="text-center mb-2">contact me</h1>
             <span class="star fa fa-star"></span>
-            <form>
+            <form action="" method="POST">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Name">
                 </div>
@@ -118,25 +122,26 @@
     <footer class="container-fluid text-center">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 mb-4">
+                <div class="col-sm-12 col-md-4 mb-4">
                     <h2 class="pt-5 mb-3">location</h2>
-                    <p class="mb-0">Centar za obrazovanje</p>
+                    <p class="mb-0 mt-md-5">Centar za obrazovanje</p>
                     <p class="mb-0">bit technology</p>
                     <address class="mb-0">Nemanjina 4/I,Beograd</address>
                 </div>
-                <div class="col-sm-12 mb-4">
-                    <h2>around the web</h2>
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <h2 class="mt-md-5">around the web</h2>
                     <div class="col-sm-12">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-google-plus"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in mt-md-0"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-12 mb-4">
-                    <h2 class="pb-3">more details</h2>
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <h2 class="pb-3 mt-md-5">more details</h2>
                     <div class="col-sm-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio ut quisquam itaque
+                        <p class="mt-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio ut
+                            quisquam itaque
                             in? Cum dignissimos quasi odit veritatis sunt.</p>
                     </div>
                 </div>
