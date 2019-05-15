@@ -2,7 +2,9 @@
   text-align: center;
   align-content: center;
 }
-
+.portfolio .row {
+  display: inline-block !important;
+}
 h1 {
   font-size: 35px;
   font-weight: $font-bold;
@@ -14,18 +16,23 @@ h1 {
 
 .portfolio img {
   margin-bottom: 8px;
-  height: 250px;
+
+  // height: 250px;
 }
 @media (min-width: 768px) {
   .portfolio img {
-    height: 200px;
+    // height: 200px;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
   .portfolio img {
-    height: 200px;
-    width: 250px;
+    max-width: 32%;
+    // height: 200px;
+    // width: 250px;
     padding-bottom: 15px;
   }
+  // .portfolio .row {
+  //   display: none;
+  // }
 }

@@ -94,6 +94,10 @@ a:hover {
   align-content: center;
 }
 
+.portfolio .row {
+  display: inline-block !important;
+}
+
 h1 {
   font-size: 35px;
   font-weight: 700;
@@ -106,19 +110,16 @@ h1 {
 
 .portfolio img {
   margin-bottom: 8px;
-  height: 250px;
 }
 
 @media (min-width: 768px) {
   .portfolio img {
-    height: 200px;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
   .portfolio img {
-    height: 200px;
-    width: 250px;
+    max-width: 32%;
     padding-bottom: 15px;
   }
 }
@@ -157,6 +158,11 @@ h1 {
   text-align: center;
 }
 
+@media (min-width: 992px) {
+  .about p {
+    width: 50%;
+  }
+}
 .text-center button {
   display: block;
   background-color: #18bc9c;
