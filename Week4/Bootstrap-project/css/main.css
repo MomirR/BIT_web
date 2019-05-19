@@ -38,6 +38,13 @@ a:hover {
   color: #00bc9c !important;
 }
 
+header span.dash {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid #fff;
+  margin-bottom: 2px;
+}
+
 @media (min-width: 768px) {
   .navbar-dark .navbar-toggler {
     background: #2c3e50 !important;
@@ -108,6 +115,13 @@ h1 {
   margin-bottom: 25px;
 }
 
+.portfolio span.dash2 {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid #2c3e50;
+  margin-bottom: 2px;
+}
+
 .portfolio img {
   margin-bottom: 8px;
 }
@@ -158,6 +172,13 @@ h1 {
   text-align: center;
 }
 
+.about span.dash {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid #fff;
+  margin-bottom: 2px;
+}
+
 @media (min-width: 992px) {
   .about p {
     width: 50%;
@@ -168,6 +189,13 @@ h1 {
   background-color: #18bc9c;
   color: #fff;
   font-weight: 700;
+}
+
+.text-center span.dash {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid #2c3e50;
+  margin-bottom: 2px;
 }
 
 footer {

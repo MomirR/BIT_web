@@ -4,3 +4,9 @@
   color: $font-color;
   font-weight: $font-bold;
 }
+.text-center span.dash {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid $font-color-dark;
+  margin-bottom: 2px;
+}

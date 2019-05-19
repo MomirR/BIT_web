@@ -18,6 +18,13 @@ a:hover{
 color: #00bc9c!important;
 }
 
+header span.dash {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid $font-color;
+  margin-bottom: 2px;
+}
+
 @media (min-width: 768px) { 
   .navbar-dark .navbar-toggler {
     background: $font-color-dark !important;

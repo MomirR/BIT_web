@@ -13,26 +13,23 @@ h1 {
 .star {
   margin-bottom: 25px;
 }
-
+.portfolio span.dash2 {
+  width: 70px;
+  display: inline-block;
+  border: 2px solid #2c3e50;
+  margin-bottom: 2px;
+}
 .portfolio img {
   margin-bottom: 8px;
-
-  // height: 250px;
 }
 @media (min-width: 768px) {
   .portfolio img {
-    // height: 200px;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
   .portfolio img {
     max-width: 32%;
-    // height: 200px;
-    // width: 250px;
     padding-bottom: 15px;
   }
-  // .portfolio .row {
-  //   display: none;
-  // }
 }
