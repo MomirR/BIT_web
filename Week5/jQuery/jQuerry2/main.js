@@ -13,16 +13,8 @@ $("body").prepend("<h1>This is our gallery</h1>");
 
 $("img").each(function () {
     $(this).css({
-        "height": "200px",
-        "width": "200px"
-    })
-});
-
-$("li").each(function (index, element) {
-    // element == this
-    $(element).css("background-color", "yellow");
-    if ($(this).is("#stop")) {
-        $("span").text("Stopped at div index #" + index);
-        return false;
-    }
+        "width": 500 * Math.random() + "px",
+        "height": 300 * Math.random() + "px"
+    });
+ 
 });
