@@ -16,5 +16,4 @@ $("img").each(function () {
         "width": 500 * Math.random() + "px",
         "height": 300 * Math.random() + "px"
     });
- 
 });
