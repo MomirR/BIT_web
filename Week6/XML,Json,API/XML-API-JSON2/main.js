@@ -5,20 +5,24 @@
 // There is a button on HTML page!
 // Each time when user click the button this function for getting image data is invoked and new picture is added to the page.
 
-var inputEle = document.querySelector("#input");
+var $submit = document.querySelector("#input");
+var $body = document.querySelector("body");
+var $div = document.querySelector('#images')
 
-inputEle.addEventListener("click", addNewPicture);
+$submit.addEventListener("click", loadRandomImage);
 
-function addNewPicture() {
+function loadRandomImage() {
     var apiRequest = new XMLHttpRequest();
     apiRequest.open("GET", "https://dog.ceo/api/breeds/image/random");
     apiRequest.send();
+
     apiRequest.onload = function () {
-        var apiReq = JSON.parse(apiRequest.response);
-        console.log(typeof apiReq);
-        var imgEle = document.createElement("img");
-        imgEle.setAttribute("src", apiReq.message);
-        document.querySelector("body").appendChild(imgEle);
-        console.log(typeof apiReq.message);
+        var response = JSON.parse(apiRequest.response);
+        $div.innerHTML = "";
+
+        var $img = document.createElement("img");
+        $img.setAttribute("src", response.message);
+        $div.appendChild($img);
     }
 }
+// "<img src='" + response.message + "' alt=''>"
