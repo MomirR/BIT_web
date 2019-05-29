@@ -1,6 +1,3 @@
-// Create a page that contains a logo and a search box (as shown on the mock)
-// The page is initially empty (there are no listed users)
-
 // The user can input some text in the search box
 // When the user clicks enter, a request is sent using jQuery Ajax API
 
