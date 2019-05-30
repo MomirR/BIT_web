@@ -17,7 +17,9 @@ function pullingImagesAndUsers() {
     var request = new XMLHttpRequest;
     var inputValue = $input.value;
     var inputValueArray = inputValue.split(" ");
-    request.open('GET', 'https://api.github.com/search/users?q=' + inputValue + '_1+SEARCH_KEYWORD_N+QUALIFIER_1+QUALIFIER_N' + , true);
+    // request.open('GET', 'https://api.github.com/search/users?q=' + inputValue + '_1+SEARCH_KEYWORD_N+QUALIFIER_1+QUALIFIER_N', true);
+
+    request.open('GET', 'https://api.github.com/users', true);
     // var parsedRequest = JSON.parse(requestValue);
     request.send();
 
