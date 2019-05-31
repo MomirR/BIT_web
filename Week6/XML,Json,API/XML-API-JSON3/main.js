@@ -1,11 +1,3 @@
-// When the user clicks enter, a request is sent using jQuery Ajax API
-
-// The request is sent to GitHub’s endpoint for searching users
-// Documentation can be found at https://developer.github.com/v3
-// Try to find URL and structure of a request for searching users
-
-// When a response is received, print an image and a username on the page for all the users in the response
-
 var $input = document.querySelector("#input");
 var $searchButton = document.querySelector("#search");
 var $img = document.querySelector("#img");
@@ -17,10 +9,9 @@ function pullingImagesAndUsers() {
     var request = new XMLHttpRequest;
     var inputValue = $input.value;
     var inputValueArray = inputValue.split(" ");
-    // request.open('GET', 'https://api.github.com/search/users?q=' + inputValue + '_1+SEARCH_KEYWORD_N+QUALIFIER_1+QUALIFIER_N', true);
 
-    request.open('GET', 'https://api.github.com/search/users', true);
-    // var parsedRequest = JSON.parse(requestValue);
+    request.open('GET', 'https://api.github.com/search/users?q=' + $input.value, true);
+
     request.send();
 
     request.onload = function () {
@@ -38,5 +29,5 @@ function pullingImagesAndUsers() {
             return "Error";
         }
     }
-    // console.log(data);
+
 }

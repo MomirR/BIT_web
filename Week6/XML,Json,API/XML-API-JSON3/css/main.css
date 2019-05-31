@@ -22,14 +22,27 @@ header h1 {
 header div {
     margin: auto 0;
 }
+
 section {
     display: flex;
     justify-content: space-between;
 }
+
 section article {
     height: 400px;
     width: 32%;
 }
+
 section article img {
     width: 100%;
+}
+
+#input {
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 200px;
+}
+
+#search {
+    border-radius: 10px;
 }
