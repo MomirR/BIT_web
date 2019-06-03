@@ -1,24 +1,41 @@
 var dataModule = (function () {
-    var data = [];
 
-    function fetchPosts(searchStr, callback) {
-        var requestURL = 'https://api.github.com/search/users?q=' + searchStr;
+    var dataArray = [];
+    // create new XHR object
+    var newXHR = new XMLHttpRequest();
 
-        $.get(requestURL, function (data) {
-            callback(data.items);
-            console.log(data);
-        }) // dobijamo undefined, cuvamo telo i i zvrsavamo ga u ctrl kad stigne response
+    // prepares the request!
+    function preparingTheRequest(searchStr, callBack) {
+        newXHR.open('GET', 'https://api.github.com/search/users?q=' + searchStr);
+
+        // send request!
+        newXHR.send();
+
+        // "load" is fired when the response to our request is completed and without error
+        newXHR.onload = function (data) {
+            if (newXHR.status === 200) {
+                data = JSON.parse(newXHR.responseText);
+                // console.log(data);
+            }
+
+            return callBack(data.items);
+        }
     }
 
-    function afterUserDataReceived(users) {
-        users.array.forEach(user => {
-            var $paragraph = $('<p>').text;
-            $("body").append($paragraph);
-        });
+
+    function searchUsers() {
+
+        var searchedUsers = [];
+
+
+        return searchedUsers
     }
-    searchUsers("bit", afterUserDataReceived);
+
+
     return {
-        fetchPosts: fetchPosts
+        preparingTheRequest: preparingTheRequest,
+        searchUsers: searchUsers,
+        dataArray: dataArray
     }
 
-})()
+})();

@@ -46,3 +46,18 @@ section article img {
 #search {
     border-radius: 10px;
 }
+.root {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;  
+}
+
+p{
+    padding: 10px 0;
+    display: inline;
+}
+img{
+    width: 30%;
+    display: inline-block;
+}
