@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box; }
+
+header input {
+  width: auto !important; }
+
+header nav {
+  display: flex;
+  justify-content: space-between !important; }
+
+/*# sourceMappingURL=main.css.map */
