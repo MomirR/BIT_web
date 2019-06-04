@@ -48,16 +48,19 @@ section article img {
 }
 .root {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;  
+    text-align: center;
 }
-
+/* 
 p{
     padding: 10px 0;
+} */
+
+.myStyle{
+    border:1px solid gray;
     display: inline;
 }
 img{
-    width: 30%;
     display: inline-block;
 }

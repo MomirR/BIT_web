@@ -17,8 +17,7 @@ var dataModule = (function () {
                 data = JSON.parse(newXHR.responseText);
                 // console.log(data);
             }
-
-            return callBack(data.items);
+            callBack(data);
         }
     }
 
@@ -31,11 +30,22 @@ var dataModule = (function () {
         return searchedUsers
     }
 
+    function getRepos(userName, callback) {
+        var requestRepo = "https://api.github.com/search/users/:" + userName + "/repos";
+        console.log(requestRepo);
+
+        $get(requestRepo, function (data) {
+            console.log(data);
+            callback(data);
+        })
+    }
+
 
     return {
         preparingTheRequest: preparingTheRequest,
         searchUsers: searchUsers,
-        dataArray: dataArray
+        dataArray: dataArray,
+        getRepos:getRepos
     }
 
 })();
