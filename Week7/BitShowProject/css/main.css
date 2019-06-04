@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; }
+
+header input {
+  width: auto !important; }
+
+header nav {
+  display: flex;
+  justify-content: space-between !important; }
+
+header {
+  background-color: #343a40; }
+
+a {
+  display: block; }
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+footer {
+  background-color: #343a40;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
