@@ -33,7 +33,9 @@ var uiModule = (function () {
         var name = singleShowUrl.name;
         var image = singleShowUrl.image.original;
         var id = $(singleShowUrl).attr("id");
-        // var cast = singleShowUrl._embedded.cast.character.id;
+
+        // var castArr = singleShowUrl._embedded.cast;
+        // var seasonsArr = singleShowUrl._embedded.seasons;
 
 
 

@@ -8,7 +8,7 @@ var controlModule = (function (dataModule, uiModule) {
 
         $('a').on("click", function () {
             var id = $(this).attr("data-show-id");
-
+            //pokupi id i prosledi u ui za trazenje cast i sezona
             dataModule.fetchSingleShow(id, displayingSingleMoviePage);
 
         })
