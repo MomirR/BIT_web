@@ -5,8 +5,6 @@
 
 const price = 120;
 
-const rez = function rez(price) {
-    return (price / 100) * 20;
-}
+const rez = (price) => (price / 100) * 20;
 
 console.log(rez(price));

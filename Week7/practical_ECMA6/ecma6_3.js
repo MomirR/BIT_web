@@ -4,9 +4,14 @@
 // 	Output: [6, 8, 13, -7, 4.1]
 
 const arr = [4, 6, 11, -9, 2.1];
+const someValue = 2;
 
-function sumNum(...args) {
-    const sum = args.map(function (elem) {
-        return
-    })
+const addingValue = (...arr) => {
+    let sum = [];
+
+    (arr.length <= 1) ? sum = arr[0].map(elem => elem + 1) : sum = arr[0].map(elem => elem + arr[1]);
+
+    return sum
 }
+
+console.log(addingValue(arr, someValue));

@@ -2,19 +2,17 @@
 // 	Function arguments: 'hello', 'there', 'ES', 6
 // 	Output: 'Hello', 'There', 'ES'
 
-function capEachtLetter(...args) {
-    const newString = args.filter(function (elem) {
-        return (typeof elem) === 'string'
-    });
+const capEachLetter = (...args) => {
+    const newString = args.filter((elem) => (typeof elem) === 'string');
 
-    const firstLetterToUp = newString.map(function (newArr) {
-        return newArr[0].toUpperCase() + newArr.slice(1).toLowerCase();
-
+    const firstLetterToUp = newString.map((elem) => {
+        if (elem[0] === (elem[0].toLowerCase())) {
+            return elem[0].toUpperCase() + elem.slice(1).toLowerCase();
+        } else {
+            return elem;
+        }
     })
-
     console.log(firstLetterToUp);
-
 }
-capEachtLetter('hello', 'there', 'ES', 6);
 
-
+capEachLetter('hello', 'there', 'ES', 6);
