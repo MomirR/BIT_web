@@ -1,50 +1,35 @@
-var ctrlModule = (function (ui, data) {
-
-    var $searchButton = document.querySelector("#search");
-    var $aEle = document.querySelector(".myStyle");
-
-    $searchButton.addEventListener("click", setupEventListener);
-   
-    function setupEventListener() {
-        var searchQuery = ui.getSearchInput()
-
-        data.preparingTheRequest(searchQuery, onSuccess);
-
-        function onSuccess(dataArr) {
-
-            ui.displayData(dataArr);
-
-        }
-    }
-
-    
-    function clickEventListener() {
-        $('a').click(function (e) {
-            e.preventDefault();
-            console.log(event.target);
+import * as ui from "./ui.js";
+import * as data from "./data.js";
+let $searchButton = document.querySelector("#search");
 
 
-            var userName = this.find('p').text();
+$searchButton.addEventListener("click", setupEventListener);
 
-            console.log(userName);
+function setupEventListener() {
+    let searchQuery = ui.getSearchInput()
+    data.preparingTheRequest(searchQuery)
+        .then((data) => ui.displayData(data))
+        .then(() => clickEventListener())
+}
 
-            function onSuccessRepo(data) {
+function clickEventListener() {
+    let $aElements = document.querySelectorAll("a");
 
-                ui.showRepos(data);
-            }
+    $aElements.forEach(element => {
+        element.addEventListener("click", function (e) {
+            const username = e.path[1].text;
+            //niz sa obj
+            data.getRepositories(username)
+                .then((userRep) => ui.showRepository(userRep))
+        });
+    })
+};
 
-            data.getRepos(userName, onSuccessRepo);
-        })
-    }
+const init = () => {
+    setupEventListener();
+    clickEventListener();
+}
 
-    // console.log(data.fetchPosts(searchQuery));
-
-    function init() {
-        setupEventListener();
-        clickEventListener();
-    }
-
-    return {
-        init: init
-    }
-})(uiModule, dataModule);
+export {
+    init
+}

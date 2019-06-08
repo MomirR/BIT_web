@@ -1,53 +1,58 @@
-var uiModule = (function () {
-    var $rootEle = document.querySelector('.root');
-    var $searchInput = document.querySelector('#input');
+var $rootEle = document.querySelector('.root');
+var $searchInput = document.querySelector('#input');
 
-    function getSearchInput() {
-        return $searchInput.value
+function getSearchInput() {
+    return $searchInput.value
+}
+
+function displayData(dataArr) {
+    $rootEle.innerHTML = "";
+
+    for (let i = 0; i < dataArr.length; i++) {
+        //.root>a>p
+        let aEle = document.createElement("a");
+        aEle.setAttribute("href", "#");
+        aEle.className = "myStyle";
+        let pEle = document.createElement("p");
+        let TextNode = document.createTextNode(dataArr[i].username);
+        pEle.appendChild(TextNode);
+        aEle.appendChild(pEle);
+        $rootEle.appendChild(aEle);
+        //+img
+        let images = document.createElement("img");
+        images.setAttribute("src", dataArr[i].img);
+        aEle.appendChild(images);
     }
+}
 
-    //display data
-    function displayData(dataArr) {
-        $rootEle.innerHTML = "";
-        if (!$searchInput) {
-            return "Input is empty";
-        }
+function showRepository(userRep) {
+    $rootEle.innerHTML = "";
 
-        for (var i = 0; i < 6; i++) {
-            var aEle = document.createElement("a");
-            aEle.setAttribute("href", "#");
-            aEle.className = "myStyle";
-            var pEle = document.createElement("p");
-            var TextNode = document.createTextNode(dataArr.items[i].login);
-            pEle.appendChild(TextNode);
-            aEle.appendChild(pEle);
-            $rootEle.appendChild(aEle);
+    userRep.forEach(element => {
+        //div .repos
+        let divEle = document.createElement("div");
+        divEle.setAttribute("class", "repos");
+        //h1
+        let headerEle = document.createElement("h1");
+        let textH1 = document.createTextNode(element.name);
+        headerEle.appendChild(textH1);
+        //p
+        let parEle = document.createElement("p");
+        let textP = document.createTextNode(element.description);
+        parEle.appendChild(textP);
+        //root
+        divEle.appendChild(headerEle);
+        divEle.appendChild(parEle);
+        $rootEle.appendChild(divEle);
+    });
+}
 
-            var images = document.createElement("img");
-            images.setAttribute("src", dataArr.items[i].avatar_url);
-            aEle.appendChild(images);
-        }
-    }
+export {
+    getSearchInput,
+    displayData,
+    showRepository
+}
 
-    function showRepos(data) {
-
-        var repos = data.items;
-
-        repos.forEach(function (user) {
-            var user_repos = user.repos_url;
-
-            $('.repos').append('div class="inner-repos"');
-            $('.inner-repos').append('<p>' + user_repos.name + '</p>')
-        })
-
-    }
-
-    return {
-        getSearchInput: getSearchInput,
-        displayData: displayData,
-        showRepos: showRepos
-    }
-})()
 
 // for (var i = 0; i < 6; i++) {
 //     var divEle = document.createElement("div");
