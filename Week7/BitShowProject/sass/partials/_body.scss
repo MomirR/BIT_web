@@ -1,8 +1,29 @@
 a {
-    display: block;
+  display: block;
 }
 .root {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  text-align: center;
+}
+.style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.singleShow {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.singleShow img {
+  height: 800px !important;
+  width: 600px;
+  margin-bottom: 10px;
+}
+.singleShow .lists {
+  // border: 1px dotted tomato;
+  width: 40%;
+}
+
+.root .details {
+  text-align: left!important;
 }

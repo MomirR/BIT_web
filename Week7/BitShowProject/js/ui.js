@@ -1,103 +1,82 @@
-//keydown nad search input
-var uiModule = (function () {
-
-    //ubaci u DOM po ratingu
-    function displayingFirstContent(data) {
-        // console.log(data);
-
-        data.forEach(function (data) {
-            var movie = data.name;
-            var img = data.image.medium;
-            var id = data.id;
-            var card = $("<span><img src='" + img + "' alt=''><a href='#' data-show-id='" + id + "'>" + movie + "</a></span>");
-
-            $(".root").append(card);
-
-            //SORTING BY RATING
-
-            // for (var i = 0; i < 50; i++) {
-            //     moviesInfo[i] = data[i].rating.average;
-            // }
-            // console.log(moviesInfo);
-
-            // data.rating.average.sort(function (a, b) {
-            //     return console.log(b - a);
-            // })
-
-        });
-    }
-
-    function loadingSingleMoviePage(singleShowUrl) {
-        $('.root').html("");
-
-        var name = singleShowUrl.name;
-        var image = singleShowUrl.image.original;
-        var id = $(singleShowUrl).attr("id");
-
-        // var castArr = singleShowUrl._embedded.cast;
-        // var seasonsArr = singleShowUrl._embedded.seasons;
+const $root = document.querySelector(".root");
+const $search = document.querySelector(".search-input");
 
 
+const displayingFirstContent = (data) => {
+    data.forEach((data) => {
+        let movie = data.name;
+        let img = data.image.medium;
+        let id = data.id;
+        let card = $("<span><img src='" + img + "' alt=''><a href='#' data-show-id='" + id + "'>" + movie + "</a></span>");
+        $(".root").append(card);
+    });
+}
 
-        console.log(singleShowUrl);
+const displayingSingleMoviePage = (singleShowData) => {
+    console.log(singleShowData);
+    $root.innerHTML = "";
 
+    const name = singleShowData.name;
+    const image = singleShowData.image.original;
+    const seasons = singleShowData._embedded.seasons.length;
+    const details = singleShowData.summary
 
+    const castArr = singleShowData._embedded.cast;
+    let castNames = [];
+    castArr.forEach((element, i) => {
+        castNames[i] = element.person.name;
+    });
 
+    $root.classList.remove("style");
+    $root.innerHTML = `
+    <h1>${name}</h1>
+    <div class="singleShow">     
+        <img src='${image}' alt='img'>
+        <div class="lists">
+            <h2>Seasons (${seasons})</h2>
+            <ul class="seasons">
+                
+            </ul>
 
+            <h2>Cast</h2>
+            <ul class="casts">
 
-        // for (var i = 0; i < singleShowUrl._embedded.cast[i].length; i++) {
-        //     if (id === singleShowUrl._embedded.cast[i].character.id) {
-        //         cast = singleShowUrl._embedded.cast[i].character.id;
-        //         return cast;
-        //     }
-        // }
+            </ul>
+        </div>
+    </div>
+    <div class="details">
+        <h2>Show Details</h2>
+        <p>${details}</p>
+    </div>
+`;
+    //cast ul
+    const $castList = document.querySelector(".casts");
 
-        // console.log(cast);
+    castNames.forEach(element => {
+        const listItem = document.createElement('li');
+        const castTextNode = document.createTextNode(element);
+        listItem.appendChild(castTextNode);
+        $castList.appendChild(listItem);
+    });
+    //seasons date ul
+    const $seasonsList = document.querySelector(".seasons");
+    const seasonsArray = singleShowData._embedded.seasons;
 
+    seasonsArray.forEach(element => {
+        const listItem = document.createElement('li');
+        const premiereAndEndDateTextNode = document.createTextNode(element.premiereDate + " " + element.endDate);
+        listItem.appendChild(premiereAndEndDateTextNode);
+        $seasonsList.appendChild(listItem);
+    });
 
+    console.log(seasonsArray);
+};
 
-        //this.name
-        //this.image.original
-        //seasons
-        //cast
+const getInputValue = () => $search.value;
 
-        var singleMovie = $(`
-            <h1>${name}</h1>
-            <img src='${image}' alt=''>
-            <div>
-                <h2></h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <h2></h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <h2></h2>
-            <p></p>
-        `);
+export {
+    displayingFirstContent,
+    displayingSingleMoviePage,
+    getInputValue
+}
 
-        $(".root").append(singleMovie);
-        console.log(singleMovie);
-    }
-
-    return {
-        displayingFirstContent: displayingFirstContent,
-        loadingSingleMoviePage: loadingSingleMoviePage
-    }
-})();

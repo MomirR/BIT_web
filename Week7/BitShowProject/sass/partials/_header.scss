@@ -1,13 +1,14 @@
 header input {
-   width: auto!important;
+  width: auto !important;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between!important;
+  display: flex;
+  justify-content: space-between !important;
 }
 header {
-    background-color: $bcg-color;
+  background-color: $bcg-color;
 }
-
-
+header a {
+  color: white;
+}
