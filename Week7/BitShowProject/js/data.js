@@ -1,5 +1,4 @@
 class Show {
-    //.name .image.original .summary
     constructor(name, poster, description) {
         this.name = name;
         this.poster = poster;
@@ -26,8 +25,6 @@ const fetchQuery = (q) => {
     fetch(url)
         .then((data) => data.json())
         .then((data) => console.log(data))
-
-
 }
 
 export {

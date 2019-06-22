@@ -1,8 +1,8 @@
 const $root = document.querySelector(".root");
 const $search = document.querySelector(".search-input");
 
-
 const displayingFirstContent = (data) => {
+    $root.innerHTML = "";
     data.forEach((data) => {
         let movie = data.name;
         let img = data.image.medium;
@@ -79,4 +79,3 @@ export {
     displayingSingleMoviePage,
     getInputValue
 }
-
