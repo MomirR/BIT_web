@@ -24,6 +24,32 @@ header a {
   color: white;
 }
 
+header .input-box {
+  position: relative;
+}
+
+header .search-list {
+  padding: 0 12px;
+  list-style: none;
+  position: absolute;
+  background-color: white;
+  width: 97%;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+}
+
+header .search-list li {
+  border-bottom: 1px solid black;
+}
+
+header .search-list a {
+  color: black;
+}
+
+header .search-list a:hover {
+  color: tomato;
+}
+
 a {
   display: block;
 }
@@ -56,6 +82,11 @@ a {
 
 .root .details {
   text-align: left !important;
+}
+
+span {
+  width: 210px;
+  margin: 15px;
 }
 
 footer {

@@ -1,8 +1,10 @@
 const $root = document.querySelector(".root");
 const $search = document.querySelector(".search-input");
+const $searchList = document.querySelector(".search-list");
 
 const displayingFirstContent = (data) => {
     $root.innerHTML = "";
+    $root.className = "container root style";
     data.forEach((data) => {
         let movie = data.name;
         let img = data.image.medium;
@@ -13,7 +15,6 @@ const displayingFirstContent = (data) => {
 }
 
 const displayingSingleMoviePage = (singleShowData) => {
-    console.log(singleShowData);
     $root.innerHTML = "";
 
     const name = singleShowData.name;
@@ -68,14 +69,42 @@ const displayingSingleMoviePage = (singleShowData) => {
         listItem.appendChild(premiereAndEndDateTextNode);
         $seasonsList.appendChild(listItem);
     });
-
-    console.log(seasonsArray);
 };
 
 const getInputValue = () => $search.value;
 
+const displaySearchedShows = (arrOfObjNameId, addEvents) => {
+    $searchList.innerHTML = "";
+
+    arrOfObjNameId.forEach((element) => {
+        const listItem = document.createElement('li');
+        let linkItem = document.createElement('a');
+
+        const atr = document.createAttribute("href");
+        linkItem.setAttributeNode(atr);
+
+        let idAtr = document.createAttribute("idShow");
+
+        idAtr.value = `${element.id}`;
+        linkItem.setAttributeNode(idAtr);
+
+        const showName = document.createTextNode(element.name);
+        linkItem.appendChild(showName);
+        listItem.appendChild(linkItem);
+        $searchList.appendChild(listItem);
+
+        return addEvents()
+    })
+}
+
+const clearSearchedList = () => {
+    $searchList.innerHTML = "";
+}
+
 export {
     displayingFirstContent,
     displayingSingleMoviePage,
-    getInputValue
+    getInputValue,
+    displaySearchedShows,
+    clearSearchedList,
 }
