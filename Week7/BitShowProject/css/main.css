@@ -4,7 +4,7 @@
 
 a:hover {
   text-decoration: none;
-  color: #f5e3e3;
+  color: #502626;
 }
 
 header input {
@@ -95,6 +95,8 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

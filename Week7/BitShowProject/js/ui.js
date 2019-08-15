@@ -9,11 +9,23 @@ const displayingFirstContent = (data) => {
         let movie = data.name;
         let img = data.image.medium;
         let id = data.id;
-        let card = $("<span><img src='" + img + "' alt=''><a href='#' data-show-id='" + id + "'>" + movie + "</a></span>");
+        let card = $(`<span><a href='#' data-show-id='${id}'><img src='${img}' alt=''></img>${movie}</a></span>`
+        );
         $(".root").append(card);
     });
 }
-
+const displayingSearchedShows = (data) => {
+    $root.innerHTML = "";
+    $root.className = "container root style";
+    data.forEach((data) => {
+        let movie = data.show.name;
+        let img = data.show.image.medium;
+        let id = data.show.id;
+        let card = $(`<span><a href='#' data-show-id='${id}'><img src='${img}' alt=''></img>${movie}</a></span>`
+        );
+        $(".root").append(card);
+    });
+}
 const displayingSingleMoviePage = (singleShowData) => {
     $root.innerHTML = "";
 
@@ -84,7 +96,6 @@ const displaySearchedShows = (arrOfObjNameId, addEvents) => {
         linkItem.setAttributeNode(atr);
 
         let idAtr = document.createAttribute("idShow");
-
         idAtr.value = `${element.id}`;
         linkItem.setAttributeNode(idAtr);
 
@@ -107,4 +118,5 @@ export {
     getInputValue,
     displaySearchedShows,
     clearSearchedList,
+    displayingSearchedShows
 }
