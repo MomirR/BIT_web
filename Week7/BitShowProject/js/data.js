@@ -6,21 +6,21 @@ export default class Show {
 }
 
 const fetchShows = () => {
-    const url = 'http://api.tvmaze.com/shows';
+    const url = 'https://api.tvmaze.com/shows';
     return fetch(url)
         .then((response) => response.json())
         .then((data) => data.slice(0, 50))
 }
 
 const fetchSingleShow = (id) => {
-    const url = `http://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=cast`;
+    const url = `https://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=cast`;
     return fetch(url)
         .then((response) => response.json())
         .then((data) => data)
 }
 
 const fetchQuery = (q) => {
-    const url = `http://api.tvmaze.com/search/shows?q=:${q}`
+    const url = `https://api.tvmaze.com/search/shows?q=:${q}`
 
     return fetch(url)
         .then((response) => response.json())
