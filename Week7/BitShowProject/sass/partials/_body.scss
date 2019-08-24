@@ -1,8 +1,14 @@
+body {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
 a {
   display: block;
 }
 .root {
   text-align: center;
+  margin-bottom: 25px;
 }
 .style {
   display: flex;
@@ -24,7 +30,8 @@ a {
 }
 
 .root .details {
-  text-align: left!important;
+  text-align: left !important;
+  margin-bottom: 10%;
 }
 span {
   width: 210px;
